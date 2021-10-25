@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = D:\CSAPP\CLionWP\Algorithm\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles\Algorithm.dir\all
+all: CMakeFiles\ReverseList.dir\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -61,6 +62,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles\Algorithm.dir\clean
+clean: CMakeFiles\ReverseList.dir\clean
 .PHONY : clean
 
 #=============================================================================
@@ -70,12 +72,12 @@ clean: CMakeFiles\Algorithm.dir\clean
 CMakeFiles\Algorithm.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Algorithm"
 .PHONY : CMakeFiles\Algorithm.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Algorithm.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Algorithm.dir\rule
@@ -88,6 +90,32 @@ Algorithm: CMakeFiles\Algorithm.dir\rule
 CMakeFiles\Algorithm.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\clean
 .PHONY : CMakeFiles\Algorithm.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ReverseList.dir
+
+# All Build rule for target.
+CMakeFiles\ReverseList.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=4,5 "Built target ReverseList"
+.PHONY : CMakeFiles\ReverseList.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\ReverseList.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\ReverseList.dir\rule
+
+# Convenience name for target.
+ReverseList: CMakeFiles\ReverseList.dir\rule
+.PHONY : ReverseList
+
+# clean rule for target.
+CMakeFiles\ReverseList.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\clean
+.PHONY : CMakeFiles\ReverseList.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -118,6 +118,46 @@ Algorithm\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\build
 .PHONY : Algorithm\fast
 
+#=============================================================================
+# Target rules for targets named ReverseList
+
+# Build rule for target.
+ReverseList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) ReverseList
+.PHONY : ReverseList
+
+# fast build rule for target.
+ReverseList\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\build
+.PHONY : ReverseList\fast
+
+ViewAlgorithm\ReverseList.obj: ViewAlgorithm\ReverseList.cpp.obj
+.PHONY : ViewAlgorithm\ReverseList.obj
+
+# target to build an object file
+ViewAlgorithm\ReverseList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\ReverseList.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\ViewAlgorithm\ReverseList.cpp.obj
+.PHONY : ViewAlgorithm\ReverseList.cpp.obj
+
+ViewAlgorithm\ReverseList.i: ViewAlgorithm\ReverseList.cpp.i
+.PHONY : ViewAlgorithm\ReverseList.i
+
+# target to preprocess a source file
+ViewAlgorithm\ReverseList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\ReverseList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\ViewAlgorithm\ReverseList.cpp.i
+.PHONY : ViewAlgorithm\ReverseList.cpp.i
+
+ViewAlgorithm\ReverseList.s: ViewAlgorithm\ReverseList.cpp.s
+.PHONY : ViewAlgorithm\ReverseList.s
+
+# target to generate assembly for a file
+ViewAlgorithm\ReverseList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\ReverseList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\ViewAlgorithm\ReverseList.cpp.s
+.PHONY : ViewAlgorithm\ReverseList.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +191,10 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Algorithm
+	@echo ... ReverseList
+	@echo ... ViewAlgorithm/ReverseList.obj
+	@echo ... ViewAlgorithm/ReverseList.i
+	@echo ... ViewAlgorithm/ReverseList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
