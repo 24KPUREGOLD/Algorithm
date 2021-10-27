@@ -3,6 +3,7 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm main.cpp ViewAlgorithm/ReverseList.cpp)
+add_executable(Algorithm main.cpp ViewAlgorithm/ReverseList.cpp ViewAlgorithm/JumpFloor.cpp)
 
 add_executable(ReverseList ViewAlgorithm/ReverseList.cpp)
+add_executable(JumpFloor ViewAlgorithm/JumpFloor.cpp)

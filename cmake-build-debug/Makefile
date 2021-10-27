@@ -54,16 +54,6 @@ CMAKE_BINARY_DIR = D:\CSAPP\CLionWP\Algorithm\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "D:\CSAPP\CLion\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache\fast: edit_cache
-.PHONY : edit_cache\fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -73,6 +63,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache\fast: rebuild_cache
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	echo >nul && "D:\CSAPP\CLion\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+.PHONY : edit_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,6 +130,46 @@ ReverseList: cmake_check_build_system
 ReverseList\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\build
 .PHONY : ReverseList\fast
+
+#=============================================================================
+# Target rules for targets named JumpFloor
+
+# Build rule for target.
+JumpFloor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) JumpFloor
+.PHONY : JumpFloor
+
+# fast build rule for target.
+JumpFloor\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\build
+.PHONY : JumpFloor\fast
+
+ViewAlgorithm\JumpFloor.obj: ViewAlgorithm\JumpFloor.cpp.obj
+.PHONY : ViewAlgorithm\JumpFloor.obj
+
+# target to build an object file
+ViewAlgorithm\JumpFloor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\JumpFloor.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\ViewAlgorithm\JumpFloor.cpp.obj
+.PHONY : ViewAlgorithm\JumpFloor.cpp.obj
+
+ViewAlgorithm\JumpFloor.i: ViewAlgorithm\JumpFloor.cpp.i
+.PHONY : ViewAlgorithm\JumpFloor.i
+
+# target to preprocess a source file
+ViewAlgorithm\JumpFloor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\JumpFloor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\ViewAlgorithm\JumpFloor.cpp.i
+.PHONY : ViewAlgorithm\JumpFloor.cpp.i
+
+ViewAlgorithm\JumpFloor.s: ViewAlgorithm\JumpFloor.cpp.s
+.PHONY : ViewAlgorithm\JumpFloor.s
+
+# target to generate assembly for a file
+ViewAlgorithm\JumpFloor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\JumpFloor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\ViewAlgorithm\JumpFloor.cpp.s
+.PHONY : ViewAlgorithm\JumpFloor.cpp.s
 
 ViewAlgorithm\ReverseList.obj: ViewAlgorithm\ReverseList.cpp.obj
 .PHONY : ViewAlgorithm\ReverseList.obj
@@ -191,7 +231,11 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Algorithm
+	@echo ... JumpFloor
 	@echo ... ReverseList
+	@echo ... ViewAlgorithm/JumpFloor.obj
+	@echo ... ViewAlgorithm/JumpFloor.i
+	@echo ... ViewAlgorithm/JumpFloor.s
 	@echo ... ViewAlgorithm/ReverseList.obj
 	@echo ... ViewAlgorithm/ReverseList.i
 	@echo ... ViewAlgorithm/ReverseList.s
