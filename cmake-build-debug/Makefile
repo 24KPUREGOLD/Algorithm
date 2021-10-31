@@ -106,6 +106,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MaxLengthSubArray
+
+# Build rule for target.
+MaxLengthSubArray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) MaxLengthSubArray
+.PHONY : MaxLengthSubArray
+
+# fast build rule for target.
+MaxLengthSubArray\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\build
+.PHONY : MaxLengthSubArray\fast
+
+#=============================================================================
 # Target rules for targets named Algorithm
 
 # Build rule for target.
@@ -171,6 +184,33 @@ ViewAlgorithm\JumpFloor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\ViewAlgorithm\JumpFloor.cpp.s
 .PHONY : ViewAlgorithm\JumpFloor.cpp.s
 
+ViewAlgorithm\MaxLengthSubArray.obj: ViewAlgorithm\MaxLengthSubArray.cpp.obj
+.PHONY : ViewAlgorithm\MaxLengthSubArray.obj
+
+# target to build an object file
+ViewAlgorithm\MaxLengthSubArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\ViewAlgorithm\MaxLengthSubArray.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\MaxLengthSubArray.cpp.obj
+.PHONY : ViewAlgorithm\MaxLengthSubArray.cpp.obj
+
+ViewAlgorithm\MaxLengthSubArray.i: ViewAlgorithm\MaxLengthSubArray.cpp.i
+.PHONY : ViewAlgorithm\MaxLengthSubArray.i
+
+# target to preprocess a source file
+ViewAlgorithm\MaxLengthSubArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\ViewAlgorithm\MaxLengthSubArray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\MaxLengthSubArray.cpp.i
+.PHONY : ViewAlgorithm\MaxLengthSubArray.cpp.i
+
+ViewAlgorithm\MaxLengthSubArray.s: ViewAlgorithm\MaxLengthSubArray.cpp.s
+.PHONY : ViewAlgorithm\MaxLengthSubArray.s
+
+# target to generate assembly for a file
+ViewAlgorithm\MaxLengthSubArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\ViewAlgorithm\MaxLengthSubArray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\ViewAlgorithm\MaxLengthSubArray.cpp.s
+.PHONY : ViewAlgorithm\MaxLengthSubArray.cpp.s
+
 ViewAlgorithm\ReverseList.obj: ViewAlgorithm\ReverseList.cpp.obj
 .PHONY : ViewAlgorithm\ReverseList.obj
 
@@ -232,10 +272,14 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Algorithm
 	@echo ... JumpFloor
+	@echo ... MaxLengthSubArray
 	@echo ... ReverseList
 	@echo ... ViewAlgorithm/JumpFloor.obj
 	@echo ... ViewAlgorithm/JumpFloor.i
 	@echo ... ViewAlgorithm/JumpFloor.s
+	@echo ... ViewAlgorithm/MaxLengthSubArray.obj
+	@echo ... ViewAlgorithm/MaxLengthSubArray.i
+	@echo ... ViewAlgorithm/MaxLengthSubArray.s
 	@echo ... ViewAlgorithm/ReverseList.obj
 	@echo ... ViewAlgorithm/ReverseList.i
 	@echo ... ViewAlgorithm/ReverseList.s

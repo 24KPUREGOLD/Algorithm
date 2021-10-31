@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "Algorithm.lib"
   "Algorithm.pdb"
   "CMakeFiles/Algorithm.dir/ViewAlgorithm/JumpFloor.cpp.obj"
+  "CMakeFiles/Algorithm.dir/ViewAlgorithm/MaxLengthSubArray.cpp.obj"
   "CMakeFiles/Algorithm.dir/ViewAlgorithm/ReverseList.cpp.obj"
   "CMakeFiles/Algorithm.dir/main.cpp.obj"
 )

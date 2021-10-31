@@ -52,6 +52,7 @@ CMAKE_BINARY_DIR = D:\CSAPP\CLionWP\Algorithm\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles\MaxLengthSubArray.dir\all
 all: CMakeFiles\Algorithm.dir\all
 all: CMakeFiles\ReverseList.dir\all
 all: CMakeFiles\JumpFloor.dir\all
@@ -62,10 +63,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles\MaxLengthSubArray.dir\clean
 clean: CMakeFiles\Algorithm.dir\clean
 clean: CMakeFiles\ReverseList.dir\clean
 clean: CMakeFiles\JumpFloor.dir\clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MaxLengthSubArray.dir
+
+# All Build rule for target.
+CMakeFiles\MaxLengthSubArray.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=8,9 "Built target MaxLengthSubArray"
+.PHONY : CMakeFiles\MaxLengthSubArray.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\MaxLengthSubArray.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\MaxLengthSubArray.dir\rule
+
+# Convenience name for target.
+MaxLengthSubArray: CMakeFiles\MaxLengthSubArray.dir\rule
+.PHONY : MaxLengthSubArray
+
+# clean rule for target.
+CMakeFiles\MaxLengthSubArray.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MaxLengthSubArray.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\MaxLengthSubArray.dir\clean
+.PHONY : CMakeFiles\MaxLengthSubArray.dir\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Algorithm.dir
@@ -74,12 +102,12 @@ clean: CMakeFiles\JumpFloor.dir\clean
 CMakeFiles\Algorithm.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target Algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Algorithm"
 .PHONY : CMakeFiles\Algorithm.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Algorithm.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Algorithm.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Algorithm.dir\rule
@@ -100,7 +128,7 @@ CMakeFiles\Algorithm.dir\clean:
 CMakeFiles\ReverseList.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ReverseList.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ReverseList.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target ReverseList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=10,11 "Built target ReverseList"
 .PHONY : CMakeFiles\ReverseList.dir\all
 
 # Build rule for subdir invocation for target.
@@ -126,7 +154,7 @@ CMakeFiles\ReverseList.dir\clean:
 CMakeFiles\JumpFloor.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JumpFloor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\JumpFloor.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target JumpFloor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CSAPP\CLionWP\Algorithm\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target JumpFloor"
 .PHONY : CMakeFiles\JumpFloor.dir\all
 
 # Build rule for subdir invocation for target.
